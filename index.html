@@ -625,38 +625,39 @@
             </li>
           </ul>
         </div>
-        <form class="footer-form">
-          <div class="footer-form-input-wrapper">
-            <label class="footer-form-label" for="subscribe-email">
+        <div class="footer-form-wrapper">
+          <p class="footer-form-text">Subscribe</p>
+          <form class="footer-form">
+            <div class="footer-form-input-wrapper">
+              <label class="footer-form-label">
+                <input
+                  class="footer-form-input"
+                  name="subscribe-email"
+                  type="email"
+                  placeholder="E-mail"
+                />
+              </label>
+            </div>
+            <button class="footer-form-btn" type="submit">
               Subscribe
-            </label>
-            <input
-              class="footer-form-input"
-              id="subscribe-email"
-              name="subscribe-email"
-              type="email"
-              placeholder="E-mail"
-            />
-          </div>
-          <button class="footer-form-btn" type="submit">
-            Subscribe
-            <svg
-              class="footer-form-btn-icon"
-              width="24"
-              height="24"
-              aria-label="telegram icon"
-            >
-              <use href="./images/icons.svg#icon-telegram"></use>
-            </svg>
-          </button>
-        </form>
+              <svg
+                class="footer-form-btn-icon"
+                width="24"
+                height="24"
+                aria-label="telegram icon"
+              >
+                <use href="./images/icons.svg#icon-telegram"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
     <!-- BACKDROP -->
     <div class="backdrop">
       <div class="modal">
-        <button class="modal-close-btn">
+        <button class="modal-close-btn" type="button">
           <svg
             class="close-btn-icon"
             width="8"
@@ -752,13 +753,13 @@
           <div class="privacy-checkbox-wrapper">
             <input
               class="privacy-checkbox visually-hidden"
-              id="user-privacy-checkbox"
-              name="user-privacy-checkbox"
+              id="user-privacy"
+              name="user-privacy"
               type="checkbox"
               value="true"
               required
             />
-            <label class="privacy-checkbox-label" for="user-privacy-checkbox">
+            <label class="privacy-checkbox-label" for="user-privacy">
               <span class="contact-form-own-checkbox">
                 <svg
                   class="own-checkbox-icon"
